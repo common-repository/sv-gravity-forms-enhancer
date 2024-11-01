@@ -1,0 +1,42 @@
+.sv_setting_textarea_parent textarea {
+	color: rgba( 50, 50, 48, 1 );
+	width: 100%;
+	border-radius: 5px;
+	height: 50px;
+	padding: 10px;
+	background-color: #FFFFFF;
+	border: 1px solid rgba( 50, 50, 48, .2 );
+	box-shadow: none;
+	outline: none !important;
+	transition: .25s ease;
+}
+
+.sv_setting_textarea_parent textarea:focus {
+	border-color: rgba( 50, 50, 48, .5 );
+}
+
+.sv_setting_textarea_parent textarea:disabled {
+	background-color: rgba( 50, 50, 48, .2 );
+}
+
+/* Code Editor */
+.sv_setting_textarea_parent .CodeMirror {
+	color: rgba( 50, 50, 48, 1 );
+	width: 100%;
+	border-radius: 5px;
+	height: 300px;
+	background-color: #FFFFFF;
+	border: 1px solid rgba( 50, 50, 48, .2 );
+	box-shadow: none;
+	outline: none !important;
+	transition: .25s ease;
+}
+
+.sv_setting_textarea_parent .CodeMirror .CodeMirror-gutters {
+	width: 46px;
+	left: 0 !important;
+}
+
+.sv_setting_textarea_parent .CodeMirror pre {
+	margin-left: 46px;
+}

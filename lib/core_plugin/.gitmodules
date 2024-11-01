@@ -1,0 +1,6 @@
+[submodule "core"]
+	path = core
+	url = ../sv_core
+[submodule "dependencies"]
+	path = dependencies
+	url = ../sv_dependencies

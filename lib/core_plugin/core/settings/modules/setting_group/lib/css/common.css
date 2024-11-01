@@ -1,0 +1,107 @@
+.sv_setting_group_parent {
+	background-color: transparent;
+	padding: 0;
+	border-radius: 0;
+}
+
+.sv_setting_group_parent .sv_setting_group_add_new {
+	margin-bottom: 25px;
+	background-color: rgba( 50, 50, 48, .05 );
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.sv_setting_group_parent .sv_setting_group_add_new .sv_setting_group_add_new_button i,
+.sv_setting_group_parent .sv_setting_group_add_new .sv_setting_group_add_new_button i > svg {
+	height: 1em;
+	width: 1em;
+}
+
+.sv_setting_group_parent .sv_setting_group_add_new .sv_setting_group_add_new_button i {
+	margin-right: 5px
+}
+
+.sv_setting_group_wrapper .sv_setting_group_settings_wrapper {
+	display: none;
+}
+
+/* Group */
+.sv_setting_group_parent .sv_setting_group {
+	margin-bottom: 25px;
+	background: rgba(0, 131, 255, 0.1);
+	border-radius: 5px;
+	padding: 15px;
+}
+
+/* Group - Header */
+.sv_setting_group_parent .sv_setting_group .sv_setting_group_header {
+	display: flex;
+	align-items: center;
+	height: 40px;
+}
+
+.sv_setting_group_parent .sv_setting_group .sv_setting_group_header .sv_setting_group_title {
+	flex-grow: 2;
+	border-bottom: 2px solid rgba( 43, 45, 48, 1);
+	margin: 0;
+	line-height: 1.5;
+	cursor: pointer;
+	transition: color .25s ease;
+}
+
+.sv_setting_group_parent  .sv_setting_group .sv_setting_group_header .sv_setting_group_title:hover {
+	color: rgb(98, 173, 249);
+}
+
+.sv_setting_group_parent  .sv_setting_group .sv_setting_group_header .sv_setting_group_title > i > svg {
+	transition: transform .4s ease;
+}
+
+.sv_setting_group_parent  .sv_setting_group .sv_setting_group_header .sv_setting_group_title > i,
+.sv_setting_group_parent  .sv_setting_group .sv_setting_group_header .sv_setting_group_title > i > svg {
+	height: 1em;
+	width: 1em;
+}
+
+.sv_setting_group_parent  .sv_setting_group .sv_setting_group_header .sv_setting_group_title > i > svg,
+.sv_setting_group_parent  .sv_setting_group .sv_setting_group_header .sv_setting_group_title > i > svg > path {
+	fill: rgba( 43, 45, 48, 1);
+}
+
+.sv_setting_group_parent .sv_setting_group.open .sv_setting_group_header .sv_setting_group_title > i > svg {
+	transform: rotate(90deg);
+}
+
+.sv_setting_group_parent  .sv_setting_group .sv_setting_group_header .sv_setting_group_delete {
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.sv_setting_group_parent  .sv_setting_group .sv_setting_group_header .sv_setting_group_delete,
+.sv_setting_group_parent  .sv_setting_group .sv_setting_group_header .sv_setting_group_delete > svg {
+	height: 1.5em;
+	width: 1.5em;
+}
+
+.sv_setting_group_parent  .sv_setting_group .sv_setting_group_header .sv_setting_group_delete > svg,
+.sv_setting_group_parent  .sv_setting_group .sv_setting_group_header .sv_setting_group_delete > svg > path {
+	fill: rgba( 43, 45, 48, 1);
+}
+
+.sv_setting_group_parent  .sv_setting_group .sv_setting_group_header .sv_setting_group_delete:hover > svg,
+.sv_setting_group_parent  .sv_setting_group .sv_setting_group_header .sv_setting_group_delete:hover > svg > path {
+	fill: rgba( 255, 110, 110, 1);
+}
+
+/* Group - Input */
+.sv_setting_group_parent  .sv_setting_group .sv_setting_group_input {
+	margin-top: 25px;
+}
+
+.sv_setting_group_parent  .sv100_sv_woocommerce_settings_setting_group_item .sv_setting_group_input {
+	flex-grow: 2;
+}
+
+.sv_setting_group_parent  .sv100_sv_woocommerce_settings_setting_group_item .sv_input {
+	margin-bottom: 0;
+}

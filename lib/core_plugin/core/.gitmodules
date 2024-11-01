@@ -1,0 +1,3 @@
+[submodule "settings/js/sv_color_picker_min"]
+	path = settings/js/sv_color_picker_min
+	url = ../component_sv_color_picker_min.git

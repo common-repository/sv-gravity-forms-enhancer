@@ -1,0 +1,27 @@
+#wpfooter{
+	display:none; //@todo hotfix - replace this after ux is polished
+}
+
+/* ==== WordPress =================================================================================================== */
+#wpwrap {
+	background-color: #FFF;
+}
+
+#wpcontent {
+	padding: 0 20px !important;
+}
+/* ===/ WordPress =================================================================================================== */
+.notice{
+	padding: 12px;
+	max-width: 1000px;
+	margin: 20px auto 20px auto;
+	position: relative;
+}
+
+/* Gutenberg Patterns Preview Fix */
+.block-editor-block-patterns-list__item .block-editor-block-preview__container{
+	display:block !important;
+}
+.block-editor-block-preview__container .block-editor-block-preview__content{
+	width:1200px;
+}

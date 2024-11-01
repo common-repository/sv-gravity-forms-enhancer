@@ -1,0 +1,117 @@
+.sv_setting_radio_parent input {
+	position: relative;
+	width: 25px;
+	height: 25px;
+	-webkit-appearance: none;
+	background-color: #FFFFFF;
+	outline: none;
+	border-radius: 100%;
+	border: 1px solid rgba( 50, 50, 48, .2 );
+	cursor: pointer;
+	margin: 0 5px 0 0;
+	transition: .25s ease;
+}
+
+.sv_setting_radio_parent input::before {
+	content: '';
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	border-radius: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba( 50, 50, 48, 1 );
+	transition: .25s ease;
+	transform: scale( 0 );
+}
+
+.sv_setting_radio_parent input:checked {
+	border-color: rgba( 50, 50, 48, 1 );
+}
+
+.sv_setting_radio_parent input:checked::before {
+	transform: scale( .6 );
+	margin: 0;
+}
+
+/* Radio - Switch Style */
+.sv_radio_switch_wrapper .switch_field {
+	position: relative;
+	height: 25px;
+	display: grid;
+	grid-template-columns: 1fr 45px 1fr;
+	grid-template-areas: 'name-off switch name-on';
+	grid-column-gap: 10px;
+	align-items: center;
+}
+
+.sv_radio_switch_wrapper .switch_field .name {
+	position: relative;
+	display: block;
+	color: rgb( 208, 208, 207 );
+	transition: .25s ease;
+}
+
+.sv_radio_switch_wrapper .switch_field input[type="radio"] {
+	grid-area: switch;
+	position: absolute;
+	width: 45px;
+	height: 24px;
+	-webkit-appearance: none;
+	background-color: rgb(225, 225, 224);
+	outline: none !important;
+	border-radius: 20px;
+	border: 1px solid rgb( 208, 208, 207 );
+	transition: .2s ease;
+	cursor: pointer;
+	margin: 0;
+	z-index: -1;
+	opacity: 0;
+	box-shadow: none
+}
+
+.sv_radio_switch_wrapper .switch_field input[type="radio"]:checked {
+	z-index: 1;
+	opacity: 1;
+}
+
+.sv_radio_switch_wrapper .switch_field input[type="radio"]:checked + .name {
+	color: rgb( 68, 68, 68 );
+}
+
+.sv_radio_switch_wrapper .switch_field input[type="radio"]::before {
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	border-radius: 100%;
+	top: -1px;
+	left: 0;
+	background-color: #FFFFFF;
+	transition: .3s ease;
+	transform: scale(.9);
+	outline: none !important;
+}
+
+.sv_radio_switch_wrapper .switch_field input[type="radio"].off + .name {
+	grid-area: name-off;
+}
+
+.sv_radio_switch_wrapper .switch_field input[type="radio"].on + .name {
+	grid-area: name-on;
+}
+
+.sv_radio_switch_wrapper .switch_field input[type="radio"].on {
+	background-color: rgb( 50, 50, 48 );
+	border-color: rgb( 50, 50, 48 );
+}
+
+.sv_radio_switch_wrapper .switch_field input[type="radio"].on::before,
+.sv_radio_switch_wrapper .switch_field input[type="radio"].off:checked::before {
+	left: 0;
+}
+
+.sv_radio_switch_wrapper .switch_field input[type="radio"].on:checked::before,
+.sv_radio_switch_wrapper .switch_field input[type="radio"].off::before {
+	left: 19px;
+}

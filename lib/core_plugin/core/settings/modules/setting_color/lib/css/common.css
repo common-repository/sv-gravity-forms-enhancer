@@ -1,0 +1,40 @@
+.sv_setting_color_parent .sv_setting_color_display {
+	min-height:100px;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAMUlEQVQ4T2NkYGAQYcAP3uCTZhw1gGGYhAGBZIA/nYDCgBDAm9BGDWAAJyRCgLaBCAAgXwixzAS0pgAAAABJRU5ErkJggg==") left center;
+}
+
+.sv_setting_color_parent .sv_setting_color_display > .sv_setting_color_value {
+	border: 1px solid rgba( 50, 50, 48, .2 );
+	border-radius: 2px;
+	width: 100%;
+	height: 100%;
+	min-height: 100px;
+}
+
+.sv_setting_color_parent .sv_input_label_color.sv_hidden {
+	display: none;
+}
+
+.sv_setting_color_parent .components-color-picker__inputs-wrapper .components-base-control__field {
+	margin: 0 2px;
+}
+
+.sv_setting_color_parent .components-color-picker__inputs-wrapper input.components-text-control__input {
+	border-radius: 5px;
+	padding: 6px 8px;
+	outline: none;
+	box-shadow: none;
+	height: 34px;
+	border: 1px solid rgba( 50, 50, 48, .2 );
+}
+
+.sv_setting_color_parent .components-color-picker__inputs-wrapper .components-color-picker__inputs-field {
+	margin-bottom: 0;
+}
+
+.sv_setting_color_parent .components-color-picker__inputs-wrapper input[type="number"].components-text-control__input {
+	padding: 6px;
+}
